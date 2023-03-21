@@ -2,7 +2,7 @@ from math import sqrt
 import matplotlib.pyplot as plt
 import numpy as np
 
-print("ax^2+bx+c=0")
+print("Ensure equation is in the form ax^2+bx+c=0")
 a = float(input("Enter coefficient of a: "))
 b = float(input("Enter coefficient of b: "))
 c = float(input("Enter coefficient of c: "))
@@ -40,7 +40,7 @@ print(f"y intercept = {c}")
 print(f"Coordinates of turning point are ({tPointx}, {tPointy})")
 
 ans = input("Would you like us to plot a graph of your equation? y/n: ")
-if ans == "y" or "Y":
+if ans == "y" or ans == "Y":
     #construct graph
     x = np.linspace(-10, 10, 1000)
     y = a*(x**2) + b*x + c  
