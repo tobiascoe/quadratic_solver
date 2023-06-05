@@ -20,7 +20,7 @@ def title():
                 return f"Graph of {a}x^2+{b}x+{c}=0"
         
         
-#catch error if roots dont exist (-4ac > b^2) resulting in negative root (imaginary number)
+#catch error if roots dont exist (b^2-4ac < 0) resulting in negative root (imaginary number)
 try:
         #quadratic formula to get both values
         value1 = (-(b)+(sqrt((b**2)-4*a*c)))/(2*a)
